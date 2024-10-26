@@ -1,0 +1,33 @@
+{
+    "name": "mitzivite-api-project2",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon server.js",
+        "swagger": "node ./swagger.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/byui-cse341-f24/mitzivite-api-project2.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/byui-cse341-f24/mitzivite-api-project2/issues"
+    },
+    "homepage": "https://github.com/byui-cse341-f24/mitzivite-api-project2#readme",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.21.0",
+        "mongodb": "^6.9.0",
+        "swagger-autogen": "^2.23.7",
+        "swagger-jsdoc": "^6.2.8",
+        "swagger-ui-express": "^5.0.1"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.7"
+    }
+}

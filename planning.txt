@@ -1,0 +1,59 @@
+Themes 
+    _id            |    MongoDB_ID
+    themeName      |    String
+    fontSize       |    Number
+    colors         |    String
+    createdAt      |    Date
+    updatedAt      |    Date
+
+
+Users
+
+    _id             |    MongoDB_ID
+    name            |    String
+    email           |    String
+    savedRecipes    |    Recipe_ID
+    profilePicture  |    String
+    createdAt       |    Date
+    updatedAt       |    Date
+
+
+Recipes:
+    _id             |    MongoDB_ID
+    name            |    String
+    ingredients: 
+            ingredientName        |     String
+            quantity              |     String
+            unit                  |     String
+    
+    steps           |    String
+    preparationTime |    Number
+    difficulty      |    String
+    category        |    String
+    image           |    String
+    author          |    User_ID
+    substitutes:
+
+            original |   String
+            substitute |  String
+
+    comments:
+
+            userId    |  User_ID
+            comment   |  String
+            rating    |  Number
+            createdAt |  Date
+
+    utensils         | String
+    faq:
+        
+            question   |  String
+            answer     |  String
+        
+
+    approximatePrices   | Number
+    servings            | Number
+    tags                | String
+    createdAt           | Date
+    updatedAt           | Date
+

@@ -1,0 +1,95 @@
+
+### Get all recipes
+GET http://localhost:3000/Recipes
+
+
+### Get recipe by id
+GET HTTP://localhost:3000/Recipes/6716f9e32b95b595a196b6a5
+
+### Create a new recipe
+POST http://localhost:3000/Recipes
+Content-Type: application/json
+
+{
+  "name": "Tamales",
+  "ingredients": "masa",
+  "steps": "horno",
+  "preparationTime": "8h",
+  "difficulty": "hard",
+  "category": "mexican food",
+  "image": "any",
+  "author": "Yo merengues",
+  "substitutes": "No",
+  "comments": "so good!",
+  "utensils": "a lot",
+  "faq": "no",
+  "approximatePrices": "15",
+  "servings": "8",
+  "tags": "any"
+}
+
+
+### Update a recipe
+PUT http://localhost:3000/Recipes/671d33142901bea7aa349ad8
+Content-Type: application/json
+
+{
+  "name": "Tamales",
+  "ingredients": "masa",
+  "steps": "MUUUCHOS",
+  "preparationTime": "8h",
+  "difficulty": "hard",
+  "category": "mexican food",
+  "image": "any",
+  "author": "Yo merengues",
+  "substitutes": "No",
+  "comments": "so good!",
+  "utensils": "a lot",
+  "faq": "no",
+  "approximatePrices": "15",
+  "servings": "8",
+  "tags": "any"
+}
+
+### Delete a recipe
+DELETE HTTP://localhost:3000/Recipes/671d2df42901bea7aa349ad3
+
+
+### Get all users
+
+GET http://localhost:3000/Users
+
+
+### Get user by id
+GET HTTP://localhost:3000/Users/671bbc43055ef8f5ceb2738a
+
+
+### Create a new user
+POST HTTP://localhost:3000/Users/
+Content-Type: application/json
+
+{
+  "firstName": "Rosy",
+  "lastName": "Tranza",
+  "email": "pachecho@gmail.com",
+  "profilePictures": "any",
+  "createdAt": "any",
+  "updatedAt": "any"
+}
+
+### Update a user
+PUT HTTP://localhost:3000/Users/671d36382901bea7aa349ad9
+Content-Type: application/json
+
+{
+  "firstName": "Rosa",
+  "lastName": "Carranza",
+  "email": "pachecho@gmail.com",
+  "profilePictures": "any",
+  "createdAt": "2020-10-26",
+  "updatedAt": "any"
+}
+
+### Delete a user
+DELETE HTTP://localhost:3000/Users/671d2f952901bea7aa349ad7
+
